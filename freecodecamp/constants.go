@@ -41,4 +41,5 @@ func constants() {
 	// fmt.Printf("%v %T\n", a, a)
 
 	// fmt.Printf("%v %T\n", a+b, a+b)
+	//test
 }
