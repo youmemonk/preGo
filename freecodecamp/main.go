@@ -6,5 +6,8 @@ func main() {
 	// constants()
 	// arrayfunc()
 	// mapsFunc()
-	structsFunc()
+	// structsFunc()
+	// controlStatementsFunc()
+	// loopingFunc()
+	behaviours()
 }

@@ -36,4 +36,8 @@ func mapsFunc() {
 	delete(statePopulation, "Texas")
 	fmt.Println(statePopulation)
 	fmt.Println(sp)
+
+	if pop, ok := statePopulation["Arizona"]; ok {
+		fmt.Println(pop)
+	}
 }
