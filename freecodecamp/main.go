@@ -4,5 +4,7 @@ func main() {
 
 	// primitives()
 	// constants()
-	arrayfunc()
+	// arrayfunc()
+	// mapsFunc()
+	structsFunc()
 }
