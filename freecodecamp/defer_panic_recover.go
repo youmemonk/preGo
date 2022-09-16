@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"net/http"
 )
 
@@ -27,7 +29,10 @@ func behaviours() {
 	// panic("Something went wrong")
 	// fmt.Println("end")
 
-	helperFunc()
+	// helperFunc()
+	fmt.Println("start")
+	panicker()
+	fmt.Println("end")
 }
 
 func helperFunc() {
@@ -38,4 +43,16 @@ func helperFunc() {
 	if err != nil {
 		panic(err.Error())
 	}
+}
+
+func panicker() {
+	fmt.Println("About to Panic")
+	defer func() {
+		if err := recover(); err != nil {
+			log.Println("Error: ", err)
+			panic(err)
+		}
+	}()
+	panic("Something bad happened")
+	fmt.Println("done panicking")
 }
